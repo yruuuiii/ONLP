@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloudventure</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- ==================== 商品詳細 ==================== -->
+    <div class="product-detail">
+      <div class="slider-container">
+        <div class="slider">
+          <img src="images/white1.png" class="slide active" />
+          <img src="images/white2.png" class="slide" />
+          <img src="images/white3.png" class="slide" />
+          <img src="images/white4.png" class="slide" />
+        </div>
+        <button class="prev">←</button>
+        <button class="next">→</button>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h2>Cloudventure White</h2>
+        <p class="price">¥25,000（税込）</p>
+        <p class="code">品番:ON-BLACK001</p>
+        <p class="desc">
+          クラウドテクノロジーによる快適なクッション性を備えたトレイルランニングシューズ。
+        </p>
+        <p class="alert">※ご購入はお一人様1点までです。</p>
+
+        <div class="option">
+          <label>カラー：</label>
+          <div class="color-options">
+            <img
+              src="images/white1.png"
+              alt="ホワイト"
+              class="color-thumb active"
+              data-color="white"
+            />
+            <img
+              src="images/black1.png"
+              alt="ブラック"
+              class="color-thumb"
+              data-color="black"
+            />
+            <img
+              src="images/brown1.png"
+              alt="ブラウン"
+              class="color-thumb"
+              data-color="brown"
+            />
+          </div>
+        </div>
+
+        <div class="option">
+          <label>サイズ：</label>
+          <div class="sizes">
+            <button disabled>23.0</button>
+            <button>23.5</button>
+            <button>24.0</button>
+            <button>24.5</button>
+            <button>25.0</button>
+            <button>25.5</button>
+            <button>26.0</button>
+            <button>26.5</button>
+            <button>27.0</button>
+            <button>27.5</button>
+            <button>28.0</button>
+            <button>28.5</button>
+            <button>29.0</button>
+            <button>29.5</button>
+            <button disabled>30.0</button>
+          </div>
+        </div>
+
+        <div class="option">
+          <label>数量：</label>
+          <select>
+            <option>1</option>
+          </select>
+        </div>
+
+        <button class="login-button" id="open-login">ログインして購入</button>
+      </div>
+    </div>
+
+    <!-- ==================== ログインモーダル ==================== -->
+    <div class="login-modal" id="loginModal">
+      <div class="login-modal-content">
+        <span
+          class="modal-close"
+          onclick="document.getElementById('loginModal').style.display='none'"
+          >&times;</span
+        >
+        <h2>ログインまたはアカウント作成</h2>
+        <p>
+          メールアドレスを入力し、ログインまたはアカウント作成を行ってください。
+        </p>
+        <input type="email" placeholder="メールアドレス *" required />
+        <button class="continue">続ける</button>
+        <div class="social-buttons">
+          <button>
+            <img src="images/google.png" width="20" /> Googleで続ける
+          </button>
+          <button>
+            <img src="images/apple.png" width="20" /> Appleで続ける
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== フッター ==================== -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- カスタマーサポート -->
+        <div class="footer-section">
+          <h4>カスタマーサポート</h4>
+          <div class="footer-content" id="support">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-label">サイズ感について</span>
+                <span class="faq-icon">▶</span>
+              </button>
+              <div class="faq-answer">
+                通常のスニーカーと同じサイズ感です。厚手のソックスを履く方は0.5cm大きめをおすすめします。
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-label">洗濯・お手入れ方法</span>
+                <span class="faq-icon">▶</span>
+              </button>
+              <div class="faq-answer">
+                柔らかい布で拭き取り、風通しの良い場所で陰干ししてください。洗濯機の使用は避けてください。
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-label">支払方法について</span>
+                <span class="faq-icon">▶</span>
+              </button>
+              <div class="faq-answer">
+                クレジットカード、Apple Pay、Google
+                Pay、コンビニ決済に対応しています。
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span class="faq-label">配送・返品について</span>
+                <span class="faq-icon">▶</span>
+              </button>
+              <div class="faq-answer">
+                ご注文から1～3営業日以内に発送。返品は到着後7日以内・未使用品に限ります。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 会社情報 -->
+        <div class="footer-section">
+          <h4>会社情報</h4>
+          <div class="footer-content" id="company">
+            <p>
+              私たちは「動くこと」を通じて、心に火を灯す製品を世界中に届けています。
+            </p>
+            <ul>
+              <li>･企業理念：すべての人のパフォーマンスを高める</li>
+              <li>･設立：2010年 スイス・チューリッヒ</li>
+              <li>･展開国：50カ国以上</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ニュースレター -->
+        <div class="footer-section">
+          <h4>ニュースレター登録</h4>
+          <div class="footer-content footer-newsletter">
+            <p>限定キャンペーンや新作情報をお届けします。</p>
+            <form>
+              <input type="email" placeholder="メールアドレス *" required />
+              <button type="submit">登録</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© ON 2025</p>
+        <div class="sns-icons">
+          <a
+            href="https://www.instagram.com/on/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/On_running"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/c/OnRunning"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== JS ==================== -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

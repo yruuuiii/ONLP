@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ON シューズ一覧</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="top" src="images/main.png" />
+    </header>
+  </body>
+  <div class="setumei">
+  <img class="top2" src="images/main2.1.png" />
+  
+</div>
+<main>
+
+</ul>
+</main>
+  <ul class="product_list">
+  <li class="shoes1">
+    <a href="cart.html" onclick="selectColor('white')">
+      <img src="images/white1.png" alt="Cloudventure white" />
+      <p class="label">限定エディション</p>
+      <h3 class="name">Cloudventure white</h3>
+      <p class="price">¥25,000</p>
+    </a>
+  </li>
+  <li class="shoes2">
+    <a href="cart.html" onclick="selectColor('black')">
+      <img src="images/black1.png" alt="Cloudmonster black" />
+      <p class="label">限定エディション</p>
+      <h3 class="name">Cloudmonster black</h3>
+      <p class="price">¥25,000</p>
+    </a>
+  </li>
+  <li class="shoes3">
+    <a href="cart.html" onclick="selectColor('brown')">
+      <img src="images/brown1.png" alt="Cloudmonster brown" />
+      <p class="label">限定エディション</p>
+      <h3 class="name">Cloudmonster brown</h3>
+      <p class="price">¥25,000</p>
+    </a>
+  </li>
+</ul>
+
+<script>
+  function selectColor(color) {
+    localStorage.setItem("selectedColor", color);
+  }
+</script>
+
+
+</body>
+</html>
